@@ -1,0 +1,22 @@
+.userContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: lightblue;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 750px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+}
+
+.block {
+    display: flex;
+}
+
+.blockContent {
+    margin: auto;
+}

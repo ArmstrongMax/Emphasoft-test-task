@@ -1,0 +1,23 @@
+.container {
+
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+}
+
+.radio {
+    display: flex;
+}
+
+.radioButtons {
+    margin: 0 auto 0 auto;
+}
+
+.submit {
+    display: flex;
+}
+
+.submitButton {
+    margin: 10px auto 10px auto;
+}

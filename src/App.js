@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, {useEffect} from "react";
 import './App.css';
+import LoginPageContainer from "./Components/LoginPage/LoginPageContainer";
+import UsersPageContainer from "./Components/UsersPage/UsersPageContainer";
+import {Route, Switch} from "react-router-dom";
+import {connect} from "react-redux";
+import {setIsAuthorized} from "./Redux/AuthReducer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+let App = (props) => {
+
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+            props.setIsAuthorized(true)
+        }
+    }, [])
+
+    return <div>
+        <Switch>
+            <Route exact path='/' component={() => <LoginPageContainer />}/>
+            <Route path='/Users' component={() => <UsersPageContainer />}/>
+        </Switch>
     </div>
-  );
 }
 
-export default App;
+let mapStateToProps =(state) => {
+    return {isAuthorized: state.auth.isAuthorized}
+}
+export default connect (mapStateToProps, {setIsAuthorized})(App);
