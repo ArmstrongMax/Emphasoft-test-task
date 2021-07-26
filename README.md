@@ -6,5 +6,5 @@ Features:
 2. Creating/editing a user with validation
      
      Backend API: http://emphasoft-test-assignment.herokuapp.com/swagger/
-     <div>Username: test_super </div>
-     <div>Password: Nf&lt;U4f&lt;rDbtDxAPn </div>
+     Username: test_super
+     Password: Nf&lt;U4f&lt;rDbtDxAPn
