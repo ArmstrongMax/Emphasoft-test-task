@@ -7,4 +7,4 @@ Features:
      
      Backend API: http://emphasoft-test-assignment.herokuapp.com/swagger/
      Username: test_super
-     Password: Nf&lt;U4f&lt;rDbtDxAPn
+     Password: Nf<U4f<rDbtDxAPn
