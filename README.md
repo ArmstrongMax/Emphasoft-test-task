@@ -1,3 +1,5 @@
+A simple application with authorization, displaying a list of users, adding a new user and editing existing ones. The test task of the company emhpasoft. The main technology stack: reactб reduxб redux-thunk and API from the employer.
+
 <h2>Test task for  IT company Emphasoft</h2>
 <p>Task definition:</p>
 <p>SPA with adaptive layout, user authorization and validation.</p>
